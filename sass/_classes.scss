@@ -1,0 +1,135 @@
+.cw {
+    color: $white;
+}
+
+.flex {
+    display: flex;
+}
+
+.fd-c {
+    flex-direction: column;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 2rem 4rem;
+    border-radius: 30px;
+    font-family: asap-bold;
+    font-size: 1.5rem;
+
+    @media(max-width: 1009px) {
+        padding: 1.5rem 2rem;
+        font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 1rem 1.5rem;
+        font-size: .9rem;
+    }
+}
+
+.btn-white {
+    background-color: $white;
+    color: $light-blue;
+}
+
+.sect__head {
+    text-align: center;
+    position: relative;
+
+    &::after {
+        display: block;
+        content: "";
+        background-color: $light-blue;
+        height: 4px;
+        width: 5.5rem;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -3rem;
+    }
+
+    &-title {
+        font-size: 4rem;
+        color: $black;
+        padding-bottom: 1.1rem;
+    }
+
+    &-subtitle {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: #747474;
+        font-family: asap-regular;
+        letter-spacing: 1px;
+        line-height: 1.9;
+    }
+}
+
+.index__head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 80%;
+
+    @media screen and (max-width: 767px) {
+        top: 40%;
+    }
+
+    &-title {
+        font-family: raleway;
+        font-size: 9.3rem;
+        padding-bottom: 1.5rem;
+        letter-spacing: 1px;
+         @media screen and (max-width: 767px) {
+             font-size: 4rem;
+         }
+    }
+
+    &-subtitle {
+        font-family: asap;
+        color: #FFFFFF;
+        opacity: .7;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+}
+
+.fixed-icon {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    background-color: #DBDBDB;
+    padding: 1rem;
+    border-radius: 50%;
+
+    &>i {
+        color: #4D4D4D;
+        font-size: 2.5rem;
+    }
+}
+
+.fixed-image {
+    position: fixed;
+    right: 4%;
+    bottom: 3%;
+
+    img {
+        width: 5.5rem;
+    }
+}

@@ -1,0 +1,169 @@
+.services-head {
+    font-size: 7.5rem;
+
+    @media(max-width: 767px) {
+        font-size: 4.5rem;
+    }
+}
+
+.services__main-index {
+    position: relative;
+    height: 75vh;
+    padding-top: 4rem;
+    background-image: url(../assets/images/services-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    @media(max-width: 767px) {
+        height: 30vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+     @media screen and (max-width: 500px) {
+         height: 60vh;
+     }
+}
+
+.our__services {
+    padding: 7rem 9rem;
+
+    @media(max-width: 999px) {
+        padding: 7rem 2rem;
+    }
+
+    @media(max-width: 767px) {
+        padding: 0 2rem;
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+
+        @media(max-width: 767px) {
+            grid-template-columns: 1fr;
+            padding: 0 12rem;
+        }
+        @media(max-width: 700px) {
+             padding: 10rem 7rem;
+        }
+
+        @media(max-width: 600px) {
+            padding: 10rem 4rem;
+        }
+
+        @media(max-width: 500px) {
+            padding: 10rem 2rem;
+        }
+    }
+
+    &-card {
+        cursor: pointer;
+        background-color: $white;
+        text-align: center;
+        box-shadow: 0 1px 4rem 1rem #eeeeee;
+        padding: 4rem 2.5rem;
+
+        img {
+            width: max-content;
+        }
+    }
+
+    &-title {
+        font-size: 2.2rem;
+        color: #f17d44;
+        padding: 2rem 0;
+    }
+
+    &-text {
+        color: #525a70;
+        font-family: opensans;
+        line-height: 1.9;
+    }
+}
+
+.consulting {
+    height: 49.5rem;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+
+    @media(max-width: 999px) {
+        height: 70rem;
+    }
+
+    @media(max-width: 767px) {
+        grid-template-columns: 1fr;
+        padding: 0 12rem;
+        height: auto;
+        grid-template-rows: 60rem min-content;
+    }
+    @media(max-width: 450px) {
+        grid-template-rows: 80rem min-content;
+    }
+
+    @media(max-width: 700px) {
+        padding: 0 7rem;
+    }
+
+    @media(max-width: 600px) {
+        padding: 0 3rem;
+    }
+
+    @media(max-width: 500px) {
+        padding: 0;
+    }
+
+    &__col {
+
+        &-text {
+            font-family: opensans;
+            font-size: 1.8rem;
+            color: #c3c3c3;
+            line-height: 1.8;
+            letter-spacing: 1px;
+        }
+
+        &1 {
+            padding: 0 8rem;
+            background-image: linear-gradient(rgba($black, .8), rgba($black, .8)),
+                url(../assets/images/consulting.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            @media(max-width: 767px) {
+                padding: 0 4rem;
+            }
+        }
+
+        &2 {
+            background-image: url(../assets/images/consulting2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+
+        &3 {
+            background-color: #2D5FDE;
+
+            @media(max-width: 767px) {
+                height: min-content;
+            }
+
+            img {
+                width: min-content;
+            }
+
+            &>span {
+                font-family: raleway-light;
+                font-size: 1.8rem;
+                padding-top: 2rem;
+            }
+        }
+    }
+}

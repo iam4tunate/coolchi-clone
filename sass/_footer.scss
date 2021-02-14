@@ -1,0 +1,46 @@
+.footer {
+    background-color: #282828;
+    padding: 3rem 10.9rem;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 1000px) {
+        padding: 3rem .5rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding: 3rem 2rem;
+    }
+
+    @media screen and (max-width: 1300px) {
+        padding: 3rem 3rem;
+    }
+
+    &-copyright {
+        color: #838383;
+        font-size: 1.6rem;
+        font-family: opensans;
+
+        @media screen and (max-width: 767px) {
+            padding-bottom: 1rem;
+            text-align: center;
+            line-height: 1.7;
+        }
+    }
+
+    &-social {
+        &>i {
+            font-size: 2.2rem;
+
+            @media(max-width: 600px) {
+                font-size: 2rem;
+            }
+
+            &:not(:last-child) {
+                padding-right: 1.5rem;
+            }
+        }
+    }
+}

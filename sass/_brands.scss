@@ -1,0 +1,23 @@
+.brands {
+    padding: 6rem;
+    background-color: #F2F2F2;
+
+    @media(max-width: 1100px) {
+        padding: 6rem 2rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+    }
+
+    img {
+        width: max-content;
+        height: auto;
+
+        @media screen and (max-width: 767px) {
+            &:not(:first-of-type) {
+                display: none;
+            }
+        }
+    }
+}

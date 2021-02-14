@@ -1,0 +1,74 @@
+.testimonial {
+    background-image: url(../assets/images/testimonial-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13rem 0;
+    text-align: center;
+
+    &__text {
+        &-bg {
+            font-size: 4.8rem;
+            font-family: raleway;
+            @media(max-width: 600px) {
+                font-size: 4.3rem;
+            }
+        }
+
+        &-p {
+            font-family: montserrat-regular;
+            font-size: 2.1rem;
+            font-style: italic;
+            color: #BABFF8;
+            width: 55%;
+            margin: 0 auto;
+            line-height: 1.9;
+            padding: 3rem 0;
+
+            @media(max-width: 1200px) {
+                width: 65.5%;
+            }
+
+            @media(max-width: 1000px) {
+                width: 80%;
+            }
+            @media screen and (max-width: 767px) {
+                 width: 64%;
+            }
+            @media(max-width: 600px) {
+                width: 85%;
+            }
+        }
+
+        &-name {
+            grid-column: 2/3;
+            grid-row: 1 / 2;
+            font-family: raleway;
+            font-size: 1.7rem;
+        }
+
+        &-occup {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            letter-spacing: 1px;
+            font-family: asap;
+            font-size: 1.3rem;
+            color: #BABFF8;
+        }
+
+        &-icon {
+            grid-column: 1/2;
+            grid-row: 1 / -1;
+            font-size: 3rem;
+        }
+
+        &-info {
+            margin: 0 auto;
+            width: fit-content;
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            grid-template-rows: repeat(2, min-content);
+            gap: 1rem 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,253 @@
+.header__main-index {
+    padding-top: 5rem;
+    position: relative;
+    height: 83vh;
+    background-image: url(../assets/images/about-bg.jpg);
+    background-size: 1450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+        height: 45vh;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 400px) {
+        height: 65vh;
+        background-size: cover;
+    }
+}
+
+.who {
+    background-color: #F6F6F6;
+    padding: 10rem 12rem;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    gap: 0 5rem;
+
+    @media screen and (max-width: 1200px) {
+        padding: 10rem 2rem;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        padding: 10rem 15rem;
+    }
+
+    @media screen and (max-width: 700px) {
+        padding: 10rem 10rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 10rem 5rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 10rem 3rem;
+    }
+
+    &-title {
+        font-family: raleway;
+        color: #383838;
+        font-size: 3.3rem;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &-text {
+        font-family: opensans;
+        color: #727272;
+        font-size: 1.8rem;
+        line-height: 1.8;
+    }
+}
+
+.process {
+    padding: 9.5rem 10rem;
+
+    @media screen and (max-width: 1200px) {
+        padding: 10rem 2rem;
+    }
+
+    &>.sect__head {
+        &>.sect__head-title {
+            font-size: 3.5rem;
+        }
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            padding: 0 13rem;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding: 0 10rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 0 5rem 0;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 0;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &-grid {
+        padding-top: 7.4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6rem 4rem;
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            padding: 7.4rem 15rem 0;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding: 7.4rem 10rem 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 7.4rem 5rem 0;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 7.4rem 3rem 0;
+        }
+    }
+
+    &-card {
+        text-align: center;
+
+        img {
+            width: max-content;
+        }
+    }
+
+    &-title {
+        font-family: raleway;
+        color: $black;
+        font-size: 1.9rem;
+        padding: 2.5rem 0;
+    }
+
+    &-text {
+        font-family: opensans;
+        color: #727272;
+        font-size: 1.6rem;
+        line-height: 1.8;
+    }
+}
+
+.why {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 65rem;
+
+    @media screen and (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+
+    @media screen and (max-width: 1200px) {
+        height: 80rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 95rem;
+    }
+
+    &-img {
+        background-image: url(../assets/images/why-img.jpg);
+        background-size: 800px;
+        background-position: top right;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 1200px) {
+            background-size: 650px;
+            background-position: top center;
+        }
+
+        @media screen and (max-width: 1000px) {
+            background-size: cover;
+            background-position: top right;
+        }
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &-content {
+        background-color: #313787;
+        padding: 0 9.3rem;
+
+        @media screen and (max-width: 1200px) {
+            padding: 0 2rem 0 7rem;
+            border-left: 1px solid $black;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 0 15rem;
+            border-left: none;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding: 0 10rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 0 5rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 0 3rem;
+        }
+    }
+
+    &-subtitle {
+        font-family: asap;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+    }
+
+    &-title {
+        font-size: 4.2rem;
+        color: $white;
+        padding: 2rem 0 4rem;
+    }
+
+    &-text {
+        color: #BABFF8;
+        font-family: opensans;
+        line-height: 1.8;
+        font-size: 1.8rem;
+    }
+}
+
+.statictics-about {
+    &>.sect__head {
+        padding-top: 10rem;
+    }
+
+    &>.statistics-grid {
+        background-color: $white;
+        z-index: 3;
+    }
+
+    background-image: url(../assets/images/stat.png);
+    background-color: #F0F0F0;
+    background-size: 1300px;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: -1;
+}

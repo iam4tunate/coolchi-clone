@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    @media screen and (max-width: 320px) {
+    font-size: 60%;
+    }
+    @media screen and (max-width: 310px) {
+        font-size: 58%;
+    }
+}
+
+body {
+    font-family: raleway-medium;
+    font-size: 1.6rem;
+    color: $white;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,212 @@
+.contact-head {
+    text-align: left;
+    left: 11rem;
+    top: 55%;
+    transform: translateY(-50%);
+
+    @media screen and (max-width: 1100px) {
+        left: 2rem;
+    }
+}
+
+.contact-title {
+    font-size: 7.5rem;
+
+    @media screen and (max-width: 767px) {
+        font-size: 4rem;
+    }
+}
+
+.contact-subtitle {
+    font-size: 2.5rem;
+    letter-spacing: 0;
+    font-style: italic;
+    font-family: raleway;
+    opacity: .8;
+}
+
+.contact__card {
+
+    &>i {
+        color: #383838;
+        font-size: 5rem;
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        gap: 0 8rem;
+        padding: 8.8rem 13.9rem;
+
+        @media screen and (max-width: 1100px) {
+            padding: 8.8rem 3rem;
+        }
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            padding: 8.8rem 15rem;
+            gap: 8rem 0;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding: 8.8rem 7rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 8.8rem 5rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 8.8rem 3rem;
+        }
+    }
+
+    &-title {
+        font-size: 2.6rem;
+        color: #383838;
+        padding-top: 4rem;
+    }
+
+    &-text {
+        color: #7a7a7a;
+        font-family: opensans;
+        padding: 3rem 0 2rem;
+    }
+
+    &-link {
+        color: #4a64ba;
+        font-family: opensans;
+    }
+}
+
+.contact-social {
+    text-align: center;
+    padding: 9.8rem 0 8.9rem;
+
+    &>i {
+        font-size: 2.7rem;
+        color: #383838;
+
+        &:not(:last-child) {
+            padding-right: 2.5rem;
+        }
+    }
+}
+
+.contact__form {
+    width: 60rem;
+    margin: 8rem auto 0;
+
+    @media screen and (max-width: 767px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 90%;
+    }
+
+    &>.flex {
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &-box {
+        padding: 11.2rem 0;
+        background-color: #F3F3F3;
+
+        @media screen and (max-width: 767px) {
+            padding: 11.2rem 15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding: 11.2rem 7rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 11.2rem 5rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 11.2rem 3rem;
+        }
+    }
+
+    &-input {
+        width: 100%;
+        background-color: $white;
+        height: 6.4rem;
+        border: none;
+        outline: none;
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+        font-family: opensans;
+        color: #4e4e4e;
+        font-size: 1.4rem;
+
+        &.half {
+            width: 50%;
+
+            &:first-child {
+                margin-right: 2rem;
+
+                @media screen and (max-width: 767px) {
+                    margin-right: 0;
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .contact__form-textarea {
+        font-size: 1.6rem;
+        font-family: opensans;
+        color: #4e4e4e;
+        padding: 2rem;
+        width: 100%;
+        height: 20rem;
+        background-color: $white;
+        border: none;
+        outline: none;
+        margin-bottom: 2rem;
+    }
+
+    .contact__form-btn {
+        background-color: #254099;
+        width: 100%;
+        padding: 2rem 0;
+        border: none;
+        outline: none;
+        font-family: open-sans;
+        color: $white;
+        font-size: 1.6rem;
+    }
+}
+
+.cont-sect {
+    &::after {
+        background-color: #383838;
+        height: 2px;
+        width: 3%;
+    }
+}
+
+.cont-head {
+    font-family: raleway;
+    font-size: 3.9rem;
+    color: #383838;
+}
+
+.cont-sub {
+    font-size: 1.9rem;
+    text-transform: none;
+    font-family: asap-regular;
+    letter-spacing: 0;
+}

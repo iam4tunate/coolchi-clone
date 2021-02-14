@@ -1,0 +1,44 @@
+.statistics {
+    padding: 5rem 0 0;
+
+    &>.sect__head {
+        &::after {
+            display: none;
+        }
+    }
+
+    &-grid {
+        padding: 8rem 5rem;
+        box-shadow: 0 1px 7rem 1rem rgba($color: #EEEEEE, $alpha: 1.0);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 95%;
+        margin: 7.9rem auto 0;
+
+        @media(max-width: 1299px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            gap: 3rem 0;
+        }
+    }
+}
+
+.statistic {
+    text-align: center;
+
+    &-count {
+        font-family: raleway-medium;
+        font-size: 4rem;
+        color: $light-blue;
+        padding-bottom: 1.5rem;
+    }
+
+    &-text {
+        color: #A2A2A2;
+        font-size: 1.9rem;
+        font-family: raleway;
+    }
+}
